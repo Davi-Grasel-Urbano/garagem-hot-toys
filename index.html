@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hot Toys</title>
+    <title>Hot Toys | Home</title>
+    <link rel="icon" href="hottoys.favicon" type="image/x-icon" />
     <!--Fonte-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
@@ -70,12 +71,23 @@
             id="navbar-links"
           >
             <div class="navbar-nav">
-              <a class="nav-item nav-link" id="home-menu">Home</a>
-              <a class="nav-item nav-link" id="about-menu">Sobre nós</a>
-              <a class="nav-item nav-link" id="services-menu">Serviços</a>
-              <a class="nav-item nav-link" id="team-menu">Integrantes</a>
-              <a class="nav-item nav-link" id="products-menu">Produtos</a>
-              <a class="nav-item nav-link" id="contact-menu">Contato</a>
+              <a class="nav-item nav-link" id="home-menu" href="#">Home</a>
+              <a class="nav-item nav-link" id="about-menu" href="#about-section"
+                >Sobre nós</a
+              >
+              <a
+                class="nav-item nav-link"
+                id="services-menu"
+                href="#services-section"
+                >Serviços</a
+              >
+              <a class="nav-item nav-link" id="team-menu" href="#team"
+                >Integrantes</a
+              >
+
+              <a class="nav-item nav-link" id="contact-menu" href="#contact"
+                >Contato</a
+              >
             </div>
           </div>
         </nav>
@@ -99,7 +111,7 @@
               <div class="carousel-caption d-md-block">
                 <h2>Procurando estilo e história para seu espaço?</h2>
                 <p>A Hot Toys tem que o que você precisa!</p>
-                <a href="#" class="main-btn">Ver portfólio</a>
+                <a href="produtos.html" class="main-btn">Ver portfólio</a>
               </div>
             </div>
             <div class="carousel-item">
@@ -109,7 +121,7 @@
                   Já imaginou seu sofá com a alma de um clássico dos anos 70?
                 </h2>
                 <p>O nosso time pode fazer acontecer!</p>
-                <a href="#" class="main-btn">Entre em contato</a>
+                <a href="#contact" class="main-btn">Entre em contato</a>
               </div>
             </div>
             <div class="carousel-item">
@@ -117,7 +129,7 @@
               <div class="carousel-caption d-md-block">
                 <h2>Deixe que cada peça conte uma história!</h2>
                 <p>Conte conosco, conheça nossos produtos!</p>
-                <a href="#" class="main-btn">Ver portfólio</a>
+                <a href="produtos.html" class="main-btn">Ver portfólio</a>
               </div>
             </div>
           </div>
@@ -141,133 +153,140 @@
           </a>
         </div>
         <!-- Sobre a Empresa -->
-        <div id="about-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h3 class="main-title">Sobre a Hot Toys</h3>
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid" src="img/banner3.jpg" alt="banner3" />
-              </div>
-              <div class="col-md-6">
-                <h3 class="about-title">Seu espaço, nossa paixão retrô</h3>
 
-                <p>
-                  Transformamos seus desejos em produtos tangíveis e exclusivos.
-                </p>
-                <p>
-                  Orientamos você em cada etapa, do conceito à entrega,
-                  adaptando nossos serviços para atender às suas necessidades
-                  específicas
-                </p>
-                <p>
-                  Garantimos excelência em cada detalhe, do material ao
-                  acabamento.
-                </p>
-                <p>
-                  Nosso objetivo é superar suas expectativas e criar algo
-                  verdadeiramente especial!
-                </p>
-                <p>E podemos oferecer ainda mais!</p>
-                <ul id="about-list">
-                  <li><i class="fas fa-check"></i>Design Inovador</li>
-                  <li><i class="fas fa-check"></i>Produção Personalizada</li>
-                  <li><i class="fas fa-check"></i>Qualidade Superior</li>
-                  <li><i class="fas fa-check"></i>Soluções sob medida</li>
-                  <li><i class="fas fa-check"></i>Entrega Confiável</li>
-                </ul>
+        <section id="about-section">
+          <div id="about-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="main-title">Sobre a Hot Toys</h3>
+                </div>
+                <div class="col-md-6">
+                  <img class="img-fluid" src="img/banner3.jpg" alt="banner3" />
+                </div>
+                <div class="col-md-6">
+                  <h3 class="about-title">Seu espaço, nossa paixão retrô</h3>
+
+                  <p>
+                    Transformamos seus desejos em produtos tangíveis e
+                    exclusivos.
+                  </p>
+                  <p>
+                    Orientamos você em cada etapa, do conceito à entrega,
+                    adaptando nossos serviços para atender às suas necessidades
+                    específicas
+                  </p>
+                  <p>
+                    Garantimos excelência em cada detalhe, do material ao
+                    acabamento.
+                  </p>
+                  <p>
+                    Nosso objetivo é superar suas expectativas e criar algo
+                    verdadeiramente especial!
+                  </p>
+                  <p>E podemos oferecer ainda mais!</p>
+                  <ul id="about-list">
+                    <li><i class="fas fa-check"></i>Design Inovador</li>
+                    <li><i class="fas fa-check"></i>Produção Personalizada</li>
+                    <li><i class="fas fa-check"></i>Qualidade Superior</li>
+                    <li><i class="fas fa-check"></i>Soluções sob medida</li>
+                    <li><i class="fas fa-check"></i>Entrega Confiável</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Serviços da empresa -->
-        <div id="service-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h3 class="main-title">Nossas Especialidades</h3>
-              </div>
+        </section>
+        <section id="services-section">
+          <!-- Serviços da empresa -->
+          <div id="service-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="main-title">Nossas Especialidades</h3>
+                </div>
 
-              <div class="col-md-4 service-box">
-                <img
-                  class="icons"
-                  src="icons//chopeira-bomba-gasolina-garagem-hot-toys.webp"
-                  alt=""
-                />
-                <h4>Chopeira</h4>
-                <p>Seu melhor amigo depois de um dia longo.</p>
-              </div>
-              <div class="col-md-4 service-box">
-                <img
-                  class="icons"
-                  src="icons/luminosos-garagem-hot-toys.webp"
-                  alt=""
-                />
-                <h4>Luminosos</h4>
-                <p>
-                  Para quando a vida precisa de um pouco mais de brilho(e neon).
-                </p>
-              </div>
-              <div class="col-md-4 service-box">
-                <img
-                  class="icons"
-                  src="icons/mesas-garagem-hot-toys.webp"
-                  alt=""
-                />
-                <h4>Mesas</h4>
-                <p>Onde as melhores (e piores) ideias nascem.</p>
-              </div>
-              <div class="col-md-4 service-box">
-                <img
-                  class="icons"
-                  src="icons/quadro-f1-garagem-hot-toys.webp"
-                  alt=""
-                />
-                <h4>Quadros</h4>
-                <p>Arte que não te julga, só decora.</p>
-              </div>
-              <div class="col-md-4 service-box">
-                <img
-                  class="icons"
-                  src="icons/sofas-garagem-hot-toys.webp"
-                  alt=""
-                />
-                <h4>Sofás</h4>
-                <p>O abraço que você não sabia que precisava.</p>
-              </div>
-              <div class="col-md-4 service-box">
-                <img
-                  class="icons"
-                  src="icons/banco-vespa-garagem-hot-toys.webp"
-                  alt=""
-                />
-                <h4>Bancos</h4>
-                <p>Porque ficar em pé cansa, né?</p>
-              </div>
-              <div class="col-md-4 service-box">
-                <img
-                  class="icons"
-                  src="icons/aparadores-garagem-hot-toys.webp"
-                  alt=""
-                />
-                <h4>Aparadores</h4>
-                <p>Guardando segredos (e seus sapatos).</p>
-              </div>
-              <div class="col-md-4 service-box">
-                <img
-                  class="icons"
-                  src="icons/balcao-kombi-garagem-hot-toys.webp"
-                  alt=""
-                />
-                <br />
-                <br />
-                <h4>Balcão</h4>
-                <p>Onde a mágica do happy hour acontece.</p>
+                <div class="col-md-4 service-box">
+                  <img
+                    class="icons"
+                    src="icons//chopeira-bomba-gasolina-garagem-hot-toys.webp"
+                    alt=""
+                  />
+                  <h4>Chopeira</h4>
+                  <p>Seu melhor amigo depois de um dia longo.</p>
+                </div>
+                <div class="col-md-4 service-box">
+                  <img
+                    class="icons"
+                    src="icons/luminosos-garagem-hot-toys.webp"
+                    alt=""
+                  />
+                  <h4>Luminosos</h4>
+                  <p>
+                    Para quando a vida precisa de um pouco mais de brilho(e
+                    neon).
+                  </p>
+                </div>
+                <div class="col-md-4 service-box">
+                  <img
+                    class="icons"
+                    src="icons/mesas-garagem-hot-toys.webp"
+                    alt=""
+                  />
+                  <h4>Mesas</h4>
+                  <p>Onde as melhores (e piores) ideias nascem.</p>
+                </div>
+                <div class="col-md-4 service-box">
+                  <img
+                    class="icons"
+                    src="icons/quadro-f1-garagem-hot-toys.webp"
+                    alt=""
+                  />
+                  <h4>Quadros</h4>
+                  <p>Arte que não te julga, só decora.</p>
+                </div>
+                <div class="col-md-4 service-box">
+                  <img
+                    class="icons"
+                    src="icons/sofas-garagem-hot-toys.webp"
+                    alt=""
+                  />
+                  <h4>Sofás</h4>
+                  <p>O abraço que você não sabia que precisava.</p>
+                </div>
+                <div class="col-md-4 service-box">
+                  <img
+                    class="icons"
+                    src="icons/banco-vespa-garagem-hot-toys.webp"
+                    alt=""
+                  />
+                  <h4>Bancos</h4>
+                  <p>Porque ficar em pé cansa, né?</p>
+                </div>
+                <div class="col-md-4 service-box">
+                  <img
+                    class="icons"
+                    src="icons/aparadores-garagem-hot-toys.webp"
+                    alt=""
+                  />
+                  <h4>Aparadores</h4>
+                  <p>Guardando segredos (e seus sapatos).</p>
+                </div>
+                <div class="col-md-4 service-box">
+                  <img
+                    class="icons"
+                    src="icons/balcao-kombi-garagem-hot-toys.webp"
+                    alt=""
+                  />
+                  <br />
+                  <br />
+                  <h4>Balcão</h4>
+                  <p>Onde a mágica do happy hour acontece.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!--Dados da empresa-->
         <div id="data-area">
           <div class="container">
@@ -292,67 +311,69 @@
           </div>
         </div>
 
-        <div id="team-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h3 class="main-title">Nossa Equipe</h3>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="img/Bruno.jpg"
-                    class="card-img-top"
-                    alt="imagem de perfil1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Bruno</h5>
-                    <p class="card-text">Funcionário</p>
+        <section id="team">
+          <div id="team-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="main-title">Nossa Equipe</h3>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <img
+                      src="img/Bruno.jpg"
+                      class="card-img-top"
+                      alt="imagem de perfil1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bruno</h5>
+                      <p class="card-text">Funcionário</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="img/Gabi.jpg"
-                    class="card-img-top"
-                    alt="imagem de perfil2"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Gabriela</h5>
-                    <p class="card-text">Administradora</p>
+                <div class="col-md-3">
+                  <div class="card">
+                    <img
+                      src="img/Gabi.jpg"
+                      class="card-img-top"
+                      alt="imagem de perfil2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Gabriela</h5>
+                      <p class="card-text">Administradora</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="img/Roque.jpg"
-                    class="card-img-top"
-                    alt="imagem de perfil3"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Roque</h5>
-                    <p class="card-text">Gerente</p>
+                <div class="col-md-3">
+                  <div class="card">
+                    <img
+                      src="img/Roque.jpg"
+                      class="card-img-top"
+                      alt="imagem de perfil3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Roque</h5>
+                      <p class="card-text">Gerente</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="img/Bela.jpg"
-                    class="card-img-top"
-                    alt="imagem de perfil1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Bela</h5>
-                    <p class="card-text">CEO</p>
+                <div class="col-md-3">
+                  <div class="card">
+                    <img
+                      src="img/Bela.jpg"
+                      class="card-img-top"
+                      alt="imagem de perfil1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bela</h5>
+                      <p class="card-text">CEO</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!--Personalizados-->
         <div id="apply-area">
           <div class="container-fluid">
@@ -373,7 +394,9 @@
                   Explore nossos planos de produtos personalizados e descubra um
                   universo de possibilidades feito sob medida para você.
                 </p>
-                <a href="#" class="main-btn" id="apply-btn">Explorar planos</a>
+                <a href="#contact" class="main-btn" id="apply-btn"
+                  >Me surpreenda agora!</a
+                >
               </div>
             </div>
           </div>
@@ -382,53 +405,65 @@
     </main>
 
     <!--Footer-->
-    <footer>
-      <div id="contact-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="main-title">Fale com a gente</h3>
-            </div>
-            <div class="col-md-4 contact-box">
-              <i class="fab fa-whatsapp"></i>
-              <p>
-                Nos chame no WhatsApp:
-                <span class="contact-title">(51)98294-2821</span>
-              </p>
-            </div>
+    <section id="contact">
+      <footer>
+        <div id="contact-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="main-title">Fale com a gente</h3>
+              </div>
+              <div class="col-md-4 contact-box">
+                <a href="https://wa.me/5551982942821">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <p>
+                  Nos chame no WhatsApp:
+                  <span class="contact-title">(51)98294-2821</span>
+                </p>
+              </div>
 
-            <div class="col-md-4 contact-box">
-              <i class="fab fa-instagram"></i>
-              <p>
-                Nos siga nas redes sociais!
-                <span class="contact-title">@garagemhottoys</span>
-              </p>
-            </div>
-            <div class="col-md-4 contact-box">
-              <i class="fas fa-map-marker-alt"></i>
-              <p>
-                Venha tomar um café:
+              <div class="col-md-4 contact-box">
+                <a href="https://www.instagram.com/garagemhottoys">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <p>
+                  Nos siga nas redes sociais!
+                  <span class="contact-title">@garagemhottoys</span>
+                </p>
+              </div>
+              <div class="col-md-4 contact-box">
+                <a
+                  href="https://www.google.com/maps/place/Rua+Germano+Gerhardt,+964,+Novo+Hamburgo+-+RS,+93310-210/@-29.7037142,-51.1306483,17z/data=!3m1!4b1!4m5!3m4!1s0x951979f2e2f6e8b7:0x6d907ed5f2d2d6c0!8m2!3d-29.7037142!4d-51.1284596"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                </a>
+                <p>
+                  Venha tomar um café:
 
-                <span class="contact-title">Rua Germano Gerhardt - 1004 </span>
-              </p>
+                  <span class="contact-title"
+                    >Rua Germano Gerhardt - 1004
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="copy-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <p>
-                Desenvolvido por <a href="#" target="_blank">Hot Toys</a> &copy;
-                2025
-              </p>
+        <div id="copy-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  Desenvolvido por
+                  <a href="#" target="_blank">Hot Toys</a> &copy; 2025
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </section>
 
     <!--Scripts-->
     <script src="js/script.js"></script>
