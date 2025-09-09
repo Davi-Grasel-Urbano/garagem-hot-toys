@@ -13,6 +13,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body a {
+  color: rgba(193, 0, 0, 0.953);
+  text-decoration: none;
+}
+
+body a:hover {
+  color: rgba(255, 255, 0, 0.175);
+}
+
 .row {
   margin: 0;
 }
@@ -465,4 +474,230 @@ header,
   #contact-area .contact-box p {
     font-size: 14px;
   }
+}
+
+/* Catálogo */
+#catalog-section .main-title {
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.product-img {
+  height: 100%;
+  max-height: 380px; /* controla a altura do bloco de imagem */
+  object-fit: cover; /* preenche sem distorcer */
+}
+
+.product-card .card-body {
+  padding: 24px;
+}
+
+.product-title {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.product-price .price-value {
+  font-size: 1.1rem;
+  color: var(--hot-red, rgb(217, 0, 0));
+}
+
+.product-card .btn {
+  border-radius: 999px;
+}
+
+.product-card .btn-outline-dark:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Mobile: empilha e ajusta alturas */
+@media (max-width: 767.98px) {
+  .product-img {
+    max-height: 240px;
+  }
+  .product-card .card-body {
+    padding: 16px;
+  }
+  .product-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* CTA minimalista */
+.product-cta {
+  display: inline-flex;
+  gap: 16px; /* separação entre preço e link */
+  align-items: center;
+}
+
+/* "Chip" de preço (parece área, não botão) */
+.price-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+  color: inherit; /* herda a cor do card */
+  transition: background 0.2s, border-color 0.2s, transform 0.05s;
+}
+.price-chip:hover {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+.price-chip:active {
+  transform: translateY(1px);
+}
+
+.chip-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666;
+}
+.price-value {
+  font-weight: 600;
+  color: var(--hot-brown, #281713);
+}
+
+/* Link fantasma minimalista */
+.link-ghost {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  color: inherit;
+  opacity: 0.9;
+  transition: border-color 0.2s, opacity 0.2s;
+}
+.link-ghost:hover {
+  border-color: currentColor;
+  opacity: 1;
+}
+
+/* Ajustes responsivos finos */
+@media (max-width: 575.98px) {
+  .product-cta {
+    gap: 12px;
+  }
+  .price-chip {
+    padding: 6px 10px;
+  }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(29%) sepia(98%) saturate(4500%) hue-rotate(0deg)
+    brightness(90%) contrast(90%);
+}
+
+.product-carousel .product-img {
+  width: 100%; /* sempre ocupa a largura do carrossel */
+  height: 320px; /* define uma altura fixa padrão */
+  object-fit: contain; /* corta mantendo proporção */
+  object-position: center; /* centraliza o corte */
+  border-radius: 0; /* opcional: remove arredondamento */
+}
+
+.product-card {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-cta {
+  margin-top: auto; /* joga esse bloco pro fundo */
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end; /* mantém botões à direita */
+  align-items: center;
+  margin-right: 40px;
+}
+
+.product-card .col-md-7 {
+  display: flex;
+}
+
+.product-card .card-body {
+  flex: 1; /* ocupa toda a altura da coluna */
+  padding-bottom: 8px;
+}
+
+.product-card img {
+  margin-top: 30px;
+  margin-bottom: 40px; /* ajuste o valor conforme desejar */
+}
+
+.product-desc {
+  text-align: left;
+}
+
+.feature-1,
+.feature-2,
+.feature-3 {
+  text-align: justify;
+}
+
+.product-features {
+  list-style: disc;
+  padding-left: 1.2 rem;
+}
+
+p {
+  list-style: none;
+}
+
+/* Parágrafos das “features” (p1/p2/p3) SEM marcadores */
+.para-feature {
+  text-align: justify;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+/* p2 como LISTA (apenas quando a UL estiver visível) */
+.product-features.only-p2 {
+  list-style: disc;
+  padding-left: 1.2rem; /* <-- corrige! antes estava "1.2 rem" com espaço */
+  margin: 0.5rem 0;
+}
+.product-features.only-p2 li {
+  text-align: justify;
+  margin-bottom: 0.25rem;
+}
+
+/* remove margens dos imgs do carrossel de produtos */
+.product-card .product-carousel .product-img {
+  margin: 0 !important;
+}
+
+/* define uma altura sólida para o carrossel do card */
+.product-carousel {
+  height: 320px; /* ajuste: 280–360px conforme seu gosto */
+}
+.product-carousel .carousel-inner,
+.product-carousel .carousel-item {
+  height: 100%;
+}
+.product-carousel .product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* mostra a imagem inteira sem distorcer */
+  object-position: center;
+}
+
+@media (max-width: 767.98px) {
+  .product-carousel {
+    height: 220px;
+  } /* antes 320px */
 }
